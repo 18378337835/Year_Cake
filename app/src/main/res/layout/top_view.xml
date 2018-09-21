@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:background="@color/grey_theme"
+                android:id="@+id/rl_title_bar">
+
+    <LinearLayout
+        android:id="@+id/mBack"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <ImageView
+            android:id="@+id/mBackImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_back"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/mBackTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/px32sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/mTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:textColor="@color/text_dark_color"
+        android:textSize="@dimen/px36sp"
+        android:text=""/>
+
+    <ImageView
+        android:id="@+id/mTitleimg"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/mTitle"
+        android:scaleType="center"
+        android:layout_marginLeft="3dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/mFuction"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <ImageView
+            android:id="@+id/mFucImgLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="2dp" />
+
+        <TextView
+            android:id="@+id/mFucTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_dark_color"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/px32sp" />
+
+        <ImageView
+            android:id="@+id/mFucImgRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="2dp" />
+    </LinearLayout>
+
+</RelativeLayout>

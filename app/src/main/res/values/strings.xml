@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Year_Cake</string>
+
+
+
+
+
+
+
+
+
+
+
+    <!--工具类的string-->
+    <string name="data_error">数据错误</string>
+    <string name="no_network">网络连接错误，请检查网络</string>
+    <string name="server_unconnect">服务器无法连接，请检查网络</string>
+    <string name="set_success">设置成功</string>
+    <string name="cancle">取消</string>
+    <string name="to_setting">去设置</string>
+    <string name="warm_hint">温馨提示</string>
+    <string name="download">下载</string>
+
+    <string name="pickerview_year">年</string>
+    <string name="pickerview_month">月</string>
+    <string name="pickerview_day">日</string>
+    <string name="pickerview_hours">时</string>
+    <string name="pickerview_minutes">分</string>
+    <string name="pickerview_seconds">秒</string>
+    <string name="pickerview_submit">确定</string>
+    <string name="pickerview_cancel">取消</string>
+
+    <string name="need_camera_permission">App此功能需要拍照权限，请开启</string>
+    <string name="need_stogafe_permission">App此功能需要获取读取存储权限，请开启</string>
+    <string name="need_contact_permission">App需要获取通讯录权限，请开启</string>
+    <string name="need_sms_permission">App需要获取短信权限，请开启</string>
+    <string name="need_call_log_permission">App需要获取通话记录权限，请开启</string>
+    <string name="data_loading">数据正在加载中...</string>
+    <string name="data_load_fail">数据加载失败</string>
+    <string name="no_camera_permission">您拒接了拍照权限，无法开启相机，请前往开启</string>
+    <string name="no_album_permission">您拒绝了读取存储权限，请前往开启</string>
+    <string name="no_read_contract_permission">您拒绝了读取联系人权限，请前往开启</string>
+</resources>

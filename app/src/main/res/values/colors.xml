@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!-- 黑色 -->
+    <color name="color_black">#000000</color>
+    <!-- 白色 -->
+    <color name="color_white">#FFFFFF</color>
+    <!-- 红色 -->
+    <color name="color_red">#FF0000</color>
+    <!-- 灰色 -->
+    <color name="color_gray">#F5F5F5</color>
+    <!-- 中灰色 -->
+    <color name="color_mid_gray">#808080</color>
+    <!-- 深灰色 -->
+    <color name="color_dark_gray">#404040</color>
+    <!-- 浅灰色 -->
+    <color name="color_min_gray">#F2F2F2</color>
+    <!-- 橘黄色 -->
+    <color name="color_origin">#FD7F01</color>
+    <!-- 绿色 -->
+    <color name="color_green">#76D672</color>
+    <!-- 蓝色 -->
+    <color name="color_blue">#0000FF</color>
+    <!-- 紫色 -->
+    <color name="color_purple">#800080</color>
+    <color name="color_none">#dcdcdc</color>
+    <color name="color_has_grab">#afafaf</color>
+    <color name="color_ffffff">#ffffff</color>
+    <color name="line_color">#d3d3d3</color>
+    <color name="translucent">#00ffffff</color>
+    <color name="text_grey_color">#eeeeee</color>
+    <color name="grey_theme">#F5F5F5</color>
+    <color name="text_dark_color">#404040</color>
+</resources>

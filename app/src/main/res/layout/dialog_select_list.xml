@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/mTitle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px60dp"
+            android:textSize="@dimen/px26sp"
+            android:text="选择图片来源"
+            android:gravity="center"
+            android:textColor="#8c8c8c" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.0px"
+            android:background="@color/line_color" />
+
+        <ListView
+            android:id="@+id/mList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/line_color"
+            android:dividerHeight="1.0px"
+            android:background="@color/color_ffffff"
+            android:listSelector="@color/translucent"
+            android:scrollbars="none"
+            android:layout_marginBottom="@dimen/px20dp">
+
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/background_2">
+        <TextView
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:gravity="center"
+            android:background="@drawable/select_cancel"
+            android:padding="@dimen/px20dp"
+
+            android:textColor="#636363"/>
+
+    </LinearLayout>
+
+</LinearLayout>
