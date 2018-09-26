@@ -57,19 +57,23 @@ public class NotificationUtils extends ContextWrapper {
                     .setContentText(content)
                     .setSmallIcon(context.getApplicationInfo().icon)
                     .setContentIntent(getPendingIntent(msg, notificationBean))
-                    .setAutoCancel(true);
+                    .setAutoCancel(true)
+                    .setDefaults(~0)
+                    .setPriority(Notification.PRIORITY_HIGH);
         }
         return null;
     }
 
-    public NotificationCompat.Builder getNotification_25(UMessage msg, NotificationBean notificationBean,
+    public NotificationCompat.Builder getNotification(UMessage msg, NotificationBean notificationBean,
                                                          String title, String content){
         return new NotificationCompat.Builder(getApplicationContext())
                 .setContentTitle(title)
                 .setContentText(content)
                 .setSmallIcon(context.getApplicationInfo().icon)
                 .setContentIntent(getPendingIntent(msg,notificationBean))
-                .setAutoCancel(true);
+                .setAutoCancel(true)
+                .setDefaults(~0)
+                .setPriority(Notification.PRIORITY_HIGH);
     }
 
     public void sendNotification(UMessage msg, NotificationBean notificationBean, String title, String content){
@@ -83,7 +87,7 @@ public class NotificationUtils extends ContextWrapper {
                 ((Service)context).startForeground(678567400, notification);
             }
         }else{
-            Notification notification = getNotification_25(msg, notificationBean, title, content).build();
+            Notification notification = getNotification(msg, notificationBean, title, content).build();
             notification.defaults = Notification.DEFAULT_SOUND;// 设置为默认的声音
 
             getManager().notify(1, notification);
