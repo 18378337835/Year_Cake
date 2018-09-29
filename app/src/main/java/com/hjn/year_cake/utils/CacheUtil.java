@@ -38,10 +38,10 @@ import java.util.concurrent.atomic.AtomicLong;
 
 /**
  * Created by Year_Cake on 2018/9/4.
+ * descripton: 用于文件保存
  */
+
 public class CacheUtil {
-    private CacheUtil() {
-    }
 
     public static final  int                    TIME_HOUR    = 60 * 60;
     public static final  int                    TIME_DAY     = TIME_HOUR * 24;

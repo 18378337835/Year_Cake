@@ -14,9 +14,11 @@ import utilpacket.utils.DeviceUtil;
 import utilpacket.utils.LogUtils;
 
 /**
- * Created by ${templefck} on 2018/9/11.
- *  Describe: 统计工具类
+ * Created by Year_Cake on 2018/9/4.
+ * descripton: 统计埋点
  */
+
+
 public class StatisticsUtils {
     /**
      * 埋点统计

@@ -12,8 +12,10 @@ import org.greenrobot.eventbus.EventBus;
 import utilpacket.utils.SPUtil;
 
 /**
- * Created by Year_Cake on 2018/8/29.
+ * Created by Year_Cake on 2018/9/4.
+ * descripton: 高德地图
  */
+
 public class LocationUtil {
     private Context context;
 

@@ -16,7 +16,7 @@ import java.net.SocketException;
 import java.util.Enumeration;
 
 /**
- * Created by Koma on 2017/6/5.
+ * Created by Year_Cake on 2018/6/5.
  * Description：设备工具类
  * version 1.0 Content：
  */

@@ -15,9 +15,12 @@ import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import com.hjn.year_cake.R;
-/**
- * 圆形的头像裁剪的架包，只需在定义控件时加入即可
+
+ /**
+ * Created by Year_Cake on 2018/9/4.
+ * descripton: 圆形的头像裁剪的架包，只需在定义控件时加入即可
  */
+
 public class CircleImg extends android.support.v7.widget.AppCompatImageView {
 	
 	private static final ScaleType SCALE_TYPE = ScaleType.CENTER_CROP;

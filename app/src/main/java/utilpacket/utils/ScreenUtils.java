@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.WindowManager;
 
 /**
- * Created by Koma on 2017/6/5.
+ * Created by Year_Cake on 2017/6/5.
  * Description：获得屏幕相关的辅助类
  * version 1.0 Content：
  */

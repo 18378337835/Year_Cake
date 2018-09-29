@@ -7,7 +7,8 @@ import java.util.Date;
 import utilpacket.utils.LogUtils;
 
 /**
- * Created by ${templefck} on 2018/9/10.
+ * Created by Year_Cake on 2018/9/4.
+ * descripton: 日期工具类
  */
 public class DataUtils {
     public static String getDateD(String data){

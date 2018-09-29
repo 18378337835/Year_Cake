@@ -4,7 +4,8 @@ import android.content.Context;
 import android.util.TypedValue;
 
 /**
- * Created by ${templefck} on 2018/9/8.
+ * Created by Year_Cake on 2018/9/4.
+ * descripton: 手机分辨率工具类
  */
 public class DesityUtil {
     /**

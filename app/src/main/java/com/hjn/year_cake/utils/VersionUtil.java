@@ -18,11 +18,12 @@ import utilpacket.utils.ToastUtils;
  * Created by Year_Cake on 2018/9/4.
  * description: 用于版本更新和强制更新
  */
+
 public class VersionUtil {
+
     /**
      * 获取APP的版本号 失败为null
-     *
-     * @param context
+       * @param context
      * @return
      */
     public static String getVersionName(Context context) {
@@ -100,7 +101,7 @@ public class VersionUtil {
      */
     public static void shareAppShop(Activity activity, String packageName) {
         try {
-            Uri uri    = Uri.parse("market://details?id="+ packageName);
+            Uri uri = Uri.parse("market://details?id="+ packageName);
             Intent intent = new Intent(Intent.ACTION_VIEW, uri);
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             activity.startActivity(intent);

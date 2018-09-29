@@ -32,6 +32,11 @@ import utilpacket.utils.LogUtils;
 import utilpacket.utils.PermissionUtils;
 import utilpacket.utils.SDCardUtils;
 
+/**
+ * Created by Year_Cake on 2018/9/4.
+ * descripton: 相机工具类
+ */
+
 
 public class PhotoUtil {
     public static final int PiC_FROM_ALBUM = 1;

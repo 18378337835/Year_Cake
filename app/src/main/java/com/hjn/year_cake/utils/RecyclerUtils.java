@@ -4,16 +4,18 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 /**
- * Created by ${templefck} on 2018/9/17.
+ * Created by Year_Cake on 2018/9/4.
+ * descripton: recycle的滑动
  */
-public class RecyclerViewUtils {
+
+public class RecyclerUtils {
     private static boolean move = false;
 
     public static void scrollToTop(RecyclerView recyclerView, final int p){
 
         final LinearLayoutManager manager = (LinearLayoutManager) recyclerView.getLayoutManager();
-        int                       fir     = manager.findFirstVisibleItemPosition();
-        int                       end     = manager.findLastVisibleItemPosition();
+        int fir = manager.findFirstVisibleItemPosition();
+        int end = manager.findLastVisibleItemPosition();
         if (p <= fir) {
             recyclerView.scrollToPosition(p);
         } else if (p <= end) {

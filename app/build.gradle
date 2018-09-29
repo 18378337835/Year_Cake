@@ -257,6 +257,7 @@ dependencies {
     }
     annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
     implementation project(':wheelview')
-
     testImplementation 'junit:junit:4.12'
+    implementation files('libs/alipaySdk-20160825.jar')
+    implementation files('libs/libammsdk.jar')
 }

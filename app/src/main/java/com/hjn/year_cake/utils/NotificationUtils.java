@@ -70,7 +70,7 @@ public class NotificationUtils extends ContextWrapper {
                 .setContentTitle(title)
                 .setContentText(content)
                 .setSmallIcon(context.getApplicationInfo().icon)
-                .setContentIntent(getPendingIntent(msg,notificationBean))
+                .setContentIntent(getPendingIntent(msg,notificationBean))//意图
                 .setAutoCancel(true)
                 .setDefaults(~0)
                 .setPriority(Notification.PRIORITY_HIGH);
