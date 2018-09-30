@@ -11,6 +11,8 @@ import com.hjn.year_cake.contract.MainPresenter;
 public class MainActivity extends BaseActivity<BaseView, MainPresenter>
         implements BaseView {
 
+    private MainPresenter mainPresenter;
+
     @Override
     public int getLayoutId(Bundle savedInstanceState) {
         return R.layout.activity_main;
@@ -18,7 +20,7 @@ public class MainActivity extends BaseActivity<BaseView, MainPresenter>
 
     @Override
     public MainPresenter getPresenter() {
-        MainPresenter mainPresenter=new MainPresenter(this,this);
+        mainPresenter=new MainPresenter(this,this);
         return mainPresenter;
     }
 

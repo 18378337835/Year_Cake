@@ -3,6 +3,7 @@ package com.hjn.year_cake.manager;
 import android.app.Activity;
 import android.app.Application;
 import android.os.Bundle;
+
 import utilpacket.utils.ActivitiesManager;
 
 /**

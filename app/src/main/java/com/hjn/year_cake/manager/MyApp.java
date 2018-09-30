@@ -23,8 +23,10 @@ import utilpacket.utils.StringUtils;
 
 
 /**
- * Created by ${templefck} on 2018/8/28.
+ * Created by Year_Cake on 2018/8/28.
+ * decription:
  */
+
 public class MyApp extends Application implements Thread.UncaughtExceptionHandler{
     private static String appName;
 

@@ -17,7 +17,8 @@ import java.util.TimerTask;
  * 时间控制按钮
  */
 
-public class CountDownTextView extends AppCompatTextView implements View.OnClickListener{
+public class CountDownTextView extends AppCompatTextView
+                         implements View.OnClickListener{
 
     private long lenght = 120 ; // 倒计时长度,这里给了默认60秒
     private String textafter = "s";
