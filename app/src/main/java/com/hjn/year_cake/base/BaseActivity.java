@@ -261,42 +261,42 @@ public abstract class BaseActivity<V extends BaseView,
     }
 
 
-    @Override
-    public boolean dispatchTouchEvent(MotionEvent ev) {
-        if (ev.getAction() == MotionEvent.ACTION_DOWN) {
-            View v = getCurrentFocus();
-            if (isShouldHideInput(v, ev)) {
-                InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-                if (imm != null) {
-                    imm.hideSoftInputFromWindow(v.getWindowToken(), 0);
-                }
-            }
-            return super.dispatchTouchEvent(ev);
-        }
-        if (getWindow().superDispatchTouchEvent(ev)) {
-            return true;
-        }
-        return onTouchEvent(ev);
-    }
+//    @Override
+//    public boolean dispatchTouchEvent(MotionEvent ev) {
+//        if (ev.getAction() == MotionEvent.ACTION_DOWN) {
+//            View v = getCurrentFocus();
+//            if (isShouldHideInput(v, ev)) {
+//                InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+//                if (imm != null) {
+//                    imm.hideSoftInputFromWindow(v.getWindowToken(), 0);
+//                }
+//            }
+//            return super.dispatchTouchEvent(ev);
+//        }
+//        if (getWindow().superDispatchTouchEvent(ev)) {
+//            return true;
+//        }
+//        return onTouchEvent(ev);
+//    }
 
-    public boolean isShouldHideInput(View v, MotionEvent event) {
-        if (v != null && (v instanceof EditText)) {
-            int[] leftTop = new int[2];
-            //获取当前输入框相对于屏幕的位置
-            v.getLocationOnScreen(leftTop);
-            int left = leftTop[0];
-            int top = leftTop[1];
-            int bottom = top + v.getHeight();
-            int right = left + v.getWidth();
-            if (event.getRawX() > left && event.getX() < right && event.getY() > top && event.getY() < bottom) {
-                // 点击的是输入框区域，保留点击EditText的事件
-                return false;
-            } else {
-                return true;
-            }
-        }
-        return false;
-    }
+//    public boolean isShouldHideInput(View v, MotionEvent event) {
+//        if (v != null && (v instanceof EditText)) {
+//            int[] leftTop = new int[2];
+//            //获取当前输入框相对于屏幕的位置
+//            v.getLocationOnScreen(leftTop);
+//            int left = leftTop[0];
+//            int top = leftTop[1];
+//            int bottom = top + v.getHeight();
+//            int right = left + v.getWidth();
+//            if (event.getRawX() > left && event.getX() < right && event.getY() > top && event.getY() < bottom) {
+//                // 点击的是输入框区域，保留点击EditText的事件
+//                return false;
+//            } else {
+//                return true;
+//            }
+//        }
+//        return false;
+//    }
 
     /**
      * 初始化显示各种状态界面
